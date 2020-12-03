@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.1, 2020-11-17T10:46:14. -->
+<!-- Written by QtCreator 4.13.1, 2020-12-03T09:52:47. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -325,8 +325,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/PA_Projeto/PA_Projeto.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/PA_Projeto/PA_Projeto.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">PA_Projeto2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto/PA_Projeto.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto/PA_Projeto.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
