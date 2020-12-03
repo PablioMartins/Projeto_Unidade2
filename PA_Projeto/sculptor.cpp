@@ -57,7 +57,9 @@ void sculptor::putVoxel(int x, int y, int z)
 
 void sculptor::cutVoxel(int x, int y, int z)
 {
-    v[x][y][z].isOn = false;
+    if(x >= 0 && x < nx && y >= 0 && y < ny && z >= 0 && z < nz){
+        v[x][y][z].isOn = false;
+    }
 }
 
 void sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
@@ -85,9 +87,9 @@ void sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
 
 void sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
-    for(int i = xcenter - radius; i < xcenter + radius; i++){
-        for(int j = ycenter - radius; j < ycenter + radius; j++){
-            for(int k = zcenter - radius; k < zcenter + radius; k++){
+    for(int i = xcenter - radius; i <= xcenter + radius; i++){
+        for(int j = ycenter - radius; j <= ycenter + radius; j++){
+            for(int k = zcenter - radius; k <= zcenter + radius; k++){
                 if(sqrt(pow(i-xcenter,2)+pow(j-ycenter,2)+pow(k-zcenter,2)) <= radius){
                 putVoxel(i,j,k);
                 }
@@ -98,9 +100,9 @@ void sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
 
 void sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
-    for(int i = xcenter - radius; i < xcenter + radius; i++){
-        for(int j = ycenter - radius; j < ycenter + radius; j++){
-            for(int k = zcenter - radius; k < zcenter + radius; k++){
+    for(int i = xcenter - radius; i <= xcenter + radius; i++){
+        for(int j = ycenter - radius; j <= ycenter + radius; j++){
+            for(int k = zcenter - radius; k <= zcenter + radius; k++){
                 if(sqrt(pow(i-xcenter,2)+pow(j-ycenter,2)+pow(k-zcenter,2)) <= radius){
                 cutVoxel(i,j,k);
                 }
@@ -114,8 +116,11 @@ void sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int r
     for(int i = xcenter - rx; i < xcenter + rx; i++){
         for(int j = ycenter - ry; j < ycenter + ry; j++){
             for(int k = zcenter - rz; k < zcenter + rz; k++){
-                if((sqrt(pow(i-xcenter,2)/pow(rx,2)+pow(j-ycenter,2)/pow(ry,2)+pow(k-zcenter,2)/pow(rz,2))) <= 1){
-                putVoxel(i,j,k);
+                if(rx != 0 && ry != 0 && rz != 0){
+                    if((sqrt(pow(i-xcenter,2)/pow(rx,2)+pow(j-ycenter,2)/pow(ry,2)+pow(k-zcenter,2)/pow(rz,2))) <= 1){
+                    putVoxel(i,j,k);
+                    }
+
                 }
             }
         }

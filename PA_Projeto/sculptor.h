@@ -112,6 +112,12 @@ public:
    * @param g é o filtro verde, valores que devem ser atribuidos na faixa "0" á "1".
    * @param b é o filtro azul, valores que devem ser atribuidos na faixa "0" á "1".
    * @param alpha é a transparência, valores que devem ser atribuidos na faixa "0" á "1".
+   *
+   * <center>
+   * <img src="Imagens\colt.png" alt="Teste" width=500>
+   * <p>Exemplo de cores e transparência </p>
+   * </center>
+   *
    */
   void setColor(float r, float g, float b, float alpha);
 
@@ -140,6 +146,11 @@ public:
    * @param y1 é a posição final da orientação "y" no espaço.
    * @param z0 é a posição inicial da orientação "z" no espaço.
    * @param z1 é a posição final da orientação "z" no espaço.
+   *
+   * <center>
+   * <img src="Imagens\boxt.png" alt="Teste" width=500>
+   * <p>Exemplo da Box</p>
+   * </center>
    */
   void putBox(int x0, int x1, int y0, int y1, int z0, int z1);
 
@@ -151,6 +162,11 @@ public:
    * @param y1 é a posição final da orientação "y" no espaço.
    * @param z0 é a posição inicial da orientação "z" no espaço.
    * @param z1 é a posição final da orientação "z" no espaço.
+   *
+   * <center>
+   * <img src="Imagens\cutboxt.png" alt="Teste" width=500>
+   * <p>Exemplo da cutBox</p>
+   * </center>
    */
   void cutBox(int x0, int x1, int y0, int y1, int z0, int z1);
 
@@ -160,6 +176,11 @@ public:
    * @param ycenter é a posição do centro da "esfera" na coordenada "y" no espaço.
    * @param zcenter é a posição do centro da "esfera" na coordenada "z" no espaço.
    * @param radius é o raio da esfera.
+   *
+   * <center>
+   * <img src="Imagens\esft.png" alt="Teste" width=500>
+   * <p>Exemplo da putSphere</p>
+   * </center>
    */
   void putSphere(int xcenter, int ycenter, int zcenter, int radius);
 
@@ -169,6 +190,11 @@ public:
    * @param ycenter é a posição do centro da "esfera" na coordenada "y" no espaço.
    * @param zcenter é a posição do centro da "esfera" na coordenada "z" no espaço.
    * @param radius é o raio da esfera.
+   *
+   * <center>
+   * <img src="Imagens\cutesft.png" alt="Teste" width=500>
+   * <p>Exemplo da cutSphere</p>
+   * </center>
    */
   void cutSphere(int xcenter, int ycenter, int zcenter, int radius);
 
@@ -181,6 +207,11 @@ public:
    * @param rx é o raio da "elipsóide" na direção "x".
    * @param ry é o raio da "elipsóide" na direção "y".
    * @param rz é o raio da "elipsóide" na direção "z".
+   *
+   * <center>
+   * <img src="Imagens\elt.png" alt="Teste" width=500>
+   * <p>Exemplo da putEllipsoid</p>
+   * </center>
    */
   void putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
 
@@ -193,6 +224,11 @@ public:
    * @param rx é o raio da "elipsóide" na direção "x".
    * @param ry é o raio da "elipsóide" na direção "y".
    * @param rz é o raio da "elipsóide" na direção "z".
+   *
+   * <center>
+   * <img src="Imagens\cutelt.png" alt="Teste" width=500>
+   * <p>Exemplo da cutEllipsoid</p>
+   * </center>
    */
   void cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
 
