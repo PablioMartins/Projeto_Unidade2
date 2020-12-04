@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.1, 2020-12-04T13:16:24. -->
+<!-- Written by QtCreator 4.13.1, 2020-12-04T13:25:20. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -94,10 +94,10 @@
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="bool">true</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\Projeto de PA\build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Debug</value>
+    <value type="bool">false</value>
+    <value type="int" key="EnableQmlDebugging">1</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\C&amp;T\5.2° Semestre ou (2020.6, exepcional)\DCA1202 - PROGRAMAÇAO AVANÇADA\Projeto_Unidade2\PA_Projeto_Part2</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/build-PA_Projeto_Part2-Desktop_Qt_5_15_1_MinGW_64_bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -142,14 +142,14 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="int" key="QtQuickCompiler">2</value>
-    <value type="int" key="SeparateDebugInfo">2</value>
+    <value type="int" key="QtQuickCompiler">1</value>
+    <value type="int" key="SeparateDebugInfo">1</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
     <value type="bool">true</value>
     <value type="int" key="EnableQmlDebugging">2</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\Projeto de PA\build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\C&amp;T\5.2° Semestre ou (2020.6, exepcional)\DCA1202 - PROGRAMAÇAO AVANÇADA\Projeto_Unidade2\build-PA_Projeto_Part2-Desktop_Qt_5_15_1_MinGW_64_bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/build-PA_Projeto_Part2-Desktop_Qt_5_15_1_MinGW_64_bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -200,8 +200,8 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="bool">true</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\Projeto de PA\build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Profile</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\pablo\OneDrive\Área de Trabalho\C&amp;T\5.2° Semestre ou (2020.6, exepcional)\DCA1202 - PROGRAMAÇAO AVANÇADA\Projeto_Unidade2\build-PA_Projeto_Part2-Desktop_Qt_5_15_1_MinGW_64_bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/build-PA_Projeto_Part2-Desktop_Qt_5_15_1_MinGW_64_bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -325,9 +325,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">PA_Projeto2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto/PA_Projeto.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto/PA_Projeto.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto_Part2/PA_Projeto_Part2.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto_Part2/PA_Projeto_Part2.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -338,7 +337,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/pablo/OneDrive/Área de Trabalho/Projeto de PA/build-PA_Projeto-Desktop_Qt_5_15_1_MinGW_64_bit-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/pablo/OneDrive/Área de Trabalho/C&amp;T/5.2° Semestre ou (2020.6, exepcional)/DCA1202 - PROGRAMAÇAO AVANÇADA/Projeto_Unidade2/PA_Projeto_Part2</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

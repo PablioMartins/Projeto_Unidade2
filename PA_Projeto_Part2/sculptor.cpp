@@ -1,15 +1,48 @@
 #include "sculptor.h"
 #include <iostream>
-#include <fstream>
 #include <iomanip>
-#include <cmath>
-
+#include <fstream>
+#include <queue>
 using namespace std;
+
+void sculptor:: LimpaVoxel(){
+    queue<int> q;
+    int x, y, z;
+    int lx, ly, lz;
+    for(x = 0; x < nx-1;x++){
+        for(y = 0; y < ny-1; y++){
+            for(z = 0; z < nz-1; z++){
+                if(v[x][y][z].isOn == true &&
+                   v[x+1][y][z].isOn == true &&
+                   v[x-1][y][z].isOn == true &&
+                   v[x][y+1][z].isOn == true &&
+                   v[x][y-1][z].isOn == true &&
+                   v[x][y][z+1].isOn == true &&
+                   v[x][y][z-1].isOn == true){
+                   q.push(x);
+                   q.push(y);
+                   q.push(z);
+                }
+            }
+        }
+    }
+    while(!q.empty()){
+        lx = q.front();
+        q.pop();
+        ly = q.front();
+        q.pop();
+        lz = q.front();
+        q.pop();
+
+        v[lx][ly][lz].isOn = false;
+    }
+}
 
 sculptor::sculptor(int _nx, int _ny, int _nz)
 {
     int i, j, k;
     nx = _nx; ny = _ny; nz = _nz;
+    r=g=b=a=0;
 
     v = new Voxel**[nx];
     v[0] = new Voxel*[ny*nx];
@@ -37,6 +70,7 @@ sculptor::~sculptor()
     delete [] v[0][0];
     delete [] v[0];
     delete [] v;
+    nx=ny=nz=0;
 }
 
 void sculptor :: setColor(float r, float g, float b, float alpha){
@@ -59,84 +93,6 @@ void sculptor::cutVoxel(int x, int y, int z)
 {
     if(x >= 0 && x < nx && y >= 0 && y < ny && z >= 0 && z < nz){
         v[x][y][z].isOn = false;
-    }
-}
-
-void sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
-{
-
-    for(int i = x0; i < x1; i++){
-        for(int j = y0; j < y1; j++){
-            for(int k = z0; k < z1; k++){
-                putVoxel(i,j,k);
-            }
-        }
-    }
-}
-
-void sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
-{
-    for(int i = x0; i < x1; i++){
-        for(int j = y0; j < y1; j++){
-            for(int k = z0; k < z1; k++){
-                cutVoxel(i,j,k);
-            }
-        }
-    }
-}
-
-void sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
-{
-    for(int i = xcenter - radius; i <= xcenter + radius; i++){
-        for(int j = ycenter - radius; j <= ycenter + radius; j++){
-            for(int k = zcenter - radius; k <= zcenter + radius; k++){
-                if(sqrt(pow(i-xcenter,2)+pow(j-ycenter,2)+pow(k-zcenter,2)) <= radius){
-                putVoxel(i,j,k);
-                }
-            }
-        }
-    }
-}
-
-void sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius)
-{
-    for(int i = xcenter - radius; i <= xcenter + radius; i++){
-        for(int j = ycenter - radius; j <= ycenter + radius; j++){
-            for(int k = zcenter - radius; k <= zcenter + radius; k++){
-                if(sqrt(pow(i-xcenter,2)+pow(j-ycenter,2)+pow(k-zcenter,2)) <= radius){
-                cutVoxel(i,j,k);
-                }
-            }
-        }
-    }
-}
-
-void sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
-{
-    for(int i = xcenter - rx; i <= xcenter + rx; i++){
-        for(int j = ycenter - ry; j <= ycenter + ry; j++){
-            for(int k = zcenter - rz; k <= zcenter + rz; k++){
-                if(rx != 0 && ry != 0 && rz != 0){
-                    if((sqrt(pow(i-xcenter,2)/pow(rx,2)+pow(j-ycenter,2)/pow(ry,2)+pow(k-zcenter,2)/pow(rz,2))) <= 1){
-                    putVoxel(i,j,k);
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-void sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
-{
-    for(int i = xcenter - rx; i <= xcenter + rx; i++){
-        for(int j = ycenter - ry; j <= ycenter + ry; j++){
-            for(int k = zcenter - rz; k <= zcenter + rz; k++){
-                if((sqrt(pow(i-xcenter,2)/pow(rx,2)+pow(j-ycenter,2)/pow(ry,2)+pow(k-zcenter,2)/pow(rz,2))) <= 1){
-                cutVoxel(i,j,k);
-                }
-            }
-        }
     }
 }
 
@@ -215,4 +171,11 @@ void sculptor::writeOFF(char *filename)
     arquivo.close();
 }
 
-
+void confere(int &x, int &y){
+    int aux;
+    if(x > y){
+        aux = x;
+        x = y;
+        y = aux;
+    }
+}
